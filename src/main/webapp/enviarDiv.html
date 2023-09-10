@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operaciones Diversas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webjars/bootstrap/5.1.0/css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+    <div class="container mt-5">
+        <form action="OperacionesDiversas.jsp" method="post">
+            <div class="mb-3">
+                <label for="numero" class="form-label">Número</label>
+                <input type="number" name="numero" class="form-control" id="numero" required>
+            </div>
+            <div class="mb-3">
+                <label for="operacion" class="form-label">Operación</label>
+                <select name="operacion" class="form-select" id="operacion" required>
+                    <option value="raizCuadrada">Raíz Cuadrada</option>
+                    <option value="raizCubica">Raíz Cúbica</option>
+                    <option value="potencia">Potencia</option>
+                    <option value="valorAbsoluto">Valor Absoluto</option>
+                    <option value="factorial">Factorial</option>
+                    <option value="logaritmo">Logaritmo</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+    </div>
+</body>
+</html>
